@@ -3,6 +3,10 @@
 Rick & Morty karakterlerini listeleyen, detaylarını gösteren ve cihaz
 galerisiyle entegre çalışan bir UIKit / Swift uygulaması.
 
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/xREuN8l4J1w/maxresdefault.jpg)](https://youtube.com/shorts/xREuN8l4J1w)
+
 ## 🚀 Projeyi Çalıştırma
 
 ### Gereksinimler
