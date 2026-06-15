@@ -1,0 +1,61 @@
+/*
+  Localizable.strings (English)
+  RickAndMortyApp
+*/
+
+// MARK: - General
+"ok" = "OK";
+"error" = "Error";
+"success" = "Success";
+"cancel" = "Cancel";
+"close" = "Close";
+"save" = "Save";
+"delete" = "Delete";
+"loading" = "Loading...";
+
+// MARK: - Character List Screen
+"characters.title" = "Characters";
+"characters.section.gallery" = "From Gallery";
+"characters.section.characters" = "Rick & Morty Characters";
+"characters.sort.title" = "Sort Gallery Photos";
+"characters.sort.newest" = "Newest First";
+"characters.sort.oldest" = "Oldest First";
+
+// MARK: - Character Detail Screen
+"character.status" = "Status";
+"character.species" = "Species";
+"character.gender" = "Gender";
+"character.origin" = "Origin";
+"character.location" = "Location";
+
+// MARK: - Character Status
+"status.alive" = "Alive";
+"status.dead" = "Dead";
+"status.unknown" = "Unknown";
+
+// MARK: - Character Gender
+"gender.male" = "Male";
+"gender.female" = "Female";
+"gender.genderless" = "Genderless";
+"gender.unknown" = "Unknown";
+
+// MARK: - Photo Detail Screen
+"photo.saved" = "Photo saved to your gallery.";
+"photo.saveFailed" = "Failed to save photo.";
+
+// MARK: - Network Errors
+"error.invalidURL" = "The request URL is invalid.";
+"error.noConnection" = "No internet connection. Showing cached data if available.";
+"error.timeout" = "Request timed out. Please try again.";
+"error.unauthorized" = "Authentication required. Please log in.";
+"error.forbidden" = "Access denied. You don't have permission.";
+"error.notFound" = "The requested resource was not found.";
+"error.rateLimited" = "Too many requests. Please wait a moment.";
+"error.decodingFailed" = "Failed to parse server response.";
+"error.serverError" = "Server returned an error (HTTP %d).";
+"error.unknown" = "An unknown error occurred.";
+
+// MARK: - Photo Library Errors
+"error.photoAccessDenied" = "Photo library access was denied. Please enable access in Settings.";
+"error.photoSaveFailed" = "Failed to save photo to library.";
+"error.photoNotFound" = "The requested image could not be found.";

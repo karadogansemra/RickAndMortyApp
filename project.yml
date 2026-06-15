@@ -1,0 +1,111 @@
+name: RickAndMortyApp
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "15.0"
+  xcodeVersion: "15.0"
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+configs:
+  Debug: debug
+  Staging: debug
+  Release: release
+
+settings:
+  SWIFT_VERSION: "5.9"
+  TARGETED_DEVICE_FAMILY: "1,2"
+
+configFiles:
+  Debug: RickAndMortyApp/Configuration/xcconfig/Debug.xcconfig
+  Staging: RickAndMortyApp/Configuration/xcconfig/Staging.xcconfig
+  Release: RickAndMortyApp/Configuration/xcconfig/Release.xcconfig
+
+targets:
+  RickAndMortyApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: RickAndMortyApp
+        excludes:
+          - "**/*.md"
+          - "Configuration/xcconfig/**"
+    settings:
+      INFOPLIST_FILE: RickAndMortyApp/Resources/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER)
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      PRODUCT_NAME: $(APP_NAME)
+      MARKETING_VERSION: $(APP_VERSION)
+      CURRENT_PROJECT_VERSION: $(APP_BUILD_NUMBER)
+    configFiles:
+      Debug: RickAndMortyApp/Configuration/xcconfig/Debug.xcconfig
+      Staging: RickAndMortyApp/Configuration/xcconfig/Staging.xcconfig
+      Release: RickAndMortyApp/Configuration/xcconfig/Release.xcconfig
+    dependencies:
+      - package: Alamofire
+      - package: Kingfisher
+      - package: Firebase
+        product: FirebaseAnalytics
+      - package: Firebase
+        product: FirebaseCrashlytics
+
+  RickAndMortyAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: RickAndMortyAppTests
+    dependencies:
+      - target: RickAndMortyApp
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.RickAndMortyAppTests
+
+schemes:
+  RickAndMortyApp-Debug:
+    build:
+      targets:
+        RickAndMortyApp: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - RickAndMortyAppTests
+    archive:
+      config: Debug
+
+  RickAndMortyApp-Staging:
+    build:
+      targets:
+        RickAndMortyApp: all
+    run:
+      config: Staging
+    test:
+      config: Staging
+      targets:
+        - RickAndMortyAppTests
+    archive:
+      config: Staging
+
+  RickAndMortyApp-Release:
+    build:
+      targets:
+        RickAndMortyApp: all
+    run:
+      config: Release
+    test:
+      config: Release
+      targets:
+        - RickAndMortyAppTests
+    archive:
+      config: Release
+
+packages:
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire
+    from: "5.9.0"
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher
+    from: "7.11.0"
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk
+    from: "10.0.0"

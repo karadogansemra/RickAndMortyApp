@@ -1,0 +1,28 @@
+//
+//  Debug.xcconfig
+//  RickAndMortyApp
+//
+//  Development environment configuration.
+//
+
+#include "Base.xcconfig"
+
+// MARK: - Environment
+ENVIRONMENT = development
+APP_DISPLAY_NAME = RickAndMorty (Dev)
+
+// MARK: - API URLs
+RICK_AND_MORTY_API_BASE_URL = https:/$()/rickandmortyapi.com/api
+// Example for second API
+EXAMPLE_API_BASE_URL = https:/$()/dev-api.example.com/api
+// Picsum for another API
+PICSUM_API_BASE_URL = https:/$()/picsum.photos/v2
+
+// MARK: - Debug Settings
+ENABLE_DEBUG_MENU = YES
+ENABLE_LOGGING = YES
+LOG_LEVEL = verbose
+
+// MARK: - Build Settings
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1

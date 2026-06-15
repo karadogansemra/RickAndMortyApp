@@ -1,0 +1,26 @@
+//
+//  Release.xcconfig
+//  RickAndMortyApp
+//
+//  Production environment configuration.
+//
+
+#include "Base.xcconfig"
+
+// MARK: - Environment
+ENVIRONMENT = production
+APP_DISPLAY_NAME = RickAndMorty
+
+// MARK: - API URLs
+RICK_AND_MORTY_API_BASE_URL = https:/$()/rickandmortyapi.com/api
+// Example for second API
+EXAMPLE_API_BASE_URL = https:/$()/api.example.com/api
+
+// MARK: - Production Settings
+ENABLE_DEBUG_MENU = NO
+ENABLE_LOGGING = NO
+LOG_LEVEL = error
+
+// MARK: - Build Settings
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE
+SWIFT_OPTIMIZATION_LEVEL = -O

@@ -1,0 +1,25 @@
+//
+//  Staging.xcconfig
+//  RickAndMortyApp
+//
+//  Staging/QA environment configuration.
+//
+
+#include "Base.xcconfig"
+
+// MARK: - Environment
+ENVIRONMENT = staging
+APP_DISPLAY_NAME = RickAndMorty (Staging)
+
+// MARK: - API URLs
+RICK_AND_MORTY_API_BASE_URL = https:/$()/rickandmortyapi.com/api
+// Example for second API
+EXAMPLE_API_BASE_URL = https:/$()/staging-api.example.com/api
+
+// MARK: - Debug Settings
+ENABLE_DEBUG_MENU = YES
+ENABLE_LOGGING = YES
+LOG_LEVEL = info
+
+// MARK: - Build Settings
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING

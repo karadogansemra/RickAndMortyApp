@@ -1,0 +1,61 @@
+/*
+  Localizable.strings (Turkish)
+  RickAndMortyApp
+*/
+
+// MARK: - General
+"ok" = "Tamam";
+"error" = "Hata";
+"success" = "Başarılı";
+"cancel" = "İptal";
+"close" = "Kapat";
+"save" = "Kaydet";
+"delete" = "Sil";
+"loading" = "Yükleniyor...";
+
+// MARK: - Character List Screen
+"characters.title" = "Karakterler";
+"characters.section.gallery" = "Galeriden";
+"characters.section.characters" = "Rick & Morty Karakterleri";
+"characters.sort.title" = "Galeri Fotoğraflarını Sırala";
+"characters.sort.newest" = "En Yeniler";
+"characters.sort.oldest" = "En Eskiler";
+
+// MARK: - Character Detail Screen
+"character.status" = "Durum";
+"character.species" = "Tür";
+"character.gender" = "Cinsiyet";
+"character.origin" = "Köken";
+"character.location" = "Konum";
+
+// MARK: - Character Status
+"status.alive" = "Canlı";
+"status.dead" = "Ölü";
+"status.unknown" = "Bilinmiyor";
+
+// MARK: - Character Gender
+"gender.male" = "Erkek";
+"gender.female" = "Kadın";
+"gender.genderless" = "Cinsiyetsiz";
+"gender.unknown" = "Bilinmiyor";
+
+// MARK: - Photo Detail Screen
+"photo.saved" = "Fotoğraf galerinize kaydedildi.";
+"photo.saveFailed" = "Fotoğraf kaydedilemedi.";
+
+// MARK: - Network Errors
+"error.invalidURL" = "İstek URL'i geçersiz.";
+"error.noConnection" = "İnternet bağlantısı yok. Varsa önbelleğe alınmış veriler gösteriliyor.";
+"error.timeout" = "İstek zaman aşımına uğradı. Lütfen tekrar deneyin.";
+"error.unauthorized" = "Kimlik doğrulama gerekli. Lütfen giriş yapın.";
+"error.forbidden" = "Erişim reddedildi. Yetkiniz yok.";
+"error.notFound" = "İstenen kaynak bulunamadı.";
+"error.rateLimited" = "Çok fazla istek gönderildi. Lütfen biraz bekleyin.";
+"error.decodingFailed" = "Sunucu yanıtı okunamadı.";
+"error.serverError" = "Sunucu hatası döndürdü (HTTP %d).";
+"error.unknown" = "Bilinmeyen bir hata oluştu.";
+
+// MARK: - Photo Library Errors
+"error.photoAccessDenied" = "Fotoğraf kitaplığı erişimi reddedildi. Lütfen Ayarlar'dan erişimi etkinleştirin.";
+"error.photoSaveFailed" = "Fotoğraf kitaplığına kaydedilemedi.";
+"error.photoNotFound" = "İstenen görsel bulunamadı.";

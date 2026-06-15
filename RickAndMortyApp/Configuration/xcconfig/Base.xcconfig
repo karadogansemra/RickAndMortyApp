@@ -1,0 +1,23 @@
+//
+//  Base.xcconfig
+//  RickAndMortyApp
+//
+//  Shared configuration values across all environments.
+//
+
+// MARK: - App Info
+APP_NAME = RickAndMortyApp
+APP_BUNDLE_IDENTIFIER = com.example.RickAndMortyApp
+APP_VERSION = 1.0.0
+APP_BUILD_NUMBER = 1
+
+// MARK: - API Configuration
+API_TIMEOUT = 30
+API_VERSION = v1
+PICSUM_API_BASE_URL = https:/$()/picsum.photos/v2
+PICSUM_IMAGE_BASE_URL = https:/$()/picsum.photos
+
+// MARK: - Feature Flags
+ENABLE_ANALYTICS = YES
+ENABLE_CRASHLYTICS = YES
+ENABLE_LOGGING = YES

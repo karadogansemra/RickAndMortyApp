@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundleDisplayName</key>
+    <string>$(APP_DISPLAY_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(APP_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(APP_BUILD_NUMBER)</string>
+    <key>AppEnvironment</key>
+    <string>$(ENVIRONMENT)</string>
+    <key>RickAndMortyAPIBaseURL</key>
+    <string>$(RICK_AND_MORTY_API_BASE_URL)</string>
+    <key>PicsumAPIBaseURL</key>
+    <string>$(PICSUM_API_BASE_URL)</string>
+    <key>PicsumImageBaseURL</key>
+    <string>$(PICSUM_IMAGE_BASE_URL)</string>
+    <key>APIVersion</key>
+    <string>$(API_VERSION)</string>
+    <key>APITimeout</key>
+    <string>$(API_TIMEOUT)</string>
+    <key>EnableAnalytics</key>
+    <string>$(ENABLE_ANALYTICS)</string>
+    <key>EnableCrashlytics</key>
+    <string>$(ENABLE_CRASHLYTICS)</string>
+    <key>EnableLogging</key>
+    <string>$(ENABLE_LOGGING)</string>
+    <key>EnableDebugMenu</key>
+    <string>$(ENABLE_DEBUG_MENU)</string>
+    <key>LogLevel</key>
+    <string>$(LOG_LEVEL)</string>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We use your photo library to display selected photos in the character list.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We save downloaded character images to your photo library.g>1</string>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We use your photo library to display selected photos in the character list.</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We save downloaded character images to your photo library.</string>
+</dict>
+</plist>
